@@ -1,0 +1,75 @@
+/* General styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f8ff; /* Light blue background */
+  color: #343a40; /* Dark gray text */
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation styles */
+.navbar {
+  background-color: #007bff; /* Blue */
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.navbar .navbar-brand {
+  color: #ffffff !important; /* White text */
+  font-weight: bold;
+}
+.navbar .nav-link {
+  color: #ffffff !important; /* White text */
+}
+.navbar .nav-link:hover {
+  color: #ffc107 !important; /* Yellow on hover */
+}
+
+/* Heading styles */
+h1, h2, h3, h4, h5, h6 {
+  color: #007bff; /* Blue */
+}
+
+/* Table styles */
+.table {
+  background-color: #ffffff; /* White */
+  border: 1px solid #dee2e6; /* Light gray border */
+}
+.table th {
+  background-color: #007bff; /* Blue */
+  color: #ffffff; /* White text */
+}
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #f2f2f2; /* Light gray for striped rows */
+}
+
+/* Button styles */
+.btn {
+  background-color: #007bff; /* Blue */
+  color: #ffffff; /* White text */
+  border: none;
+}
+.btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Link styles */
+a {
+  color: #007bff; /* Blue */
+  text-decoration: none;
+}
+a:hover {
+  color: #0056b3; /* Darker blue on hover */
+  text-decoration: underline;
+}
+
+/* Logo styling */
+.logo {
+  height: 50px;
+  margin-right: 10px;
+}
+
+/* Favicon styling */
+.favicon {
+  width: 32px;
+  height: 32px;
+}

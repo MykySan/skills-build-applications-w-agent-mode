@@ -45,7 +45,6 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
-    "corsheaders.middleware.CorsMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
@@ -53,6 +52,12 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
+
+# Enable CORS for all origins
+CORS_ALLOW_ALL_ORIGINS = True
+
+# Ensure CORS middleware is correctly ordered
+MIDDLEWARE.insert(1, 'corsheaders.middleware.CorsMiddleware')
 
 ROOT_URLCONF = "octofit_tracker.urls"
 
