@@ -29,7 +29,7 @@ class TeamSerializer(serializers.ModelSerializer):
 
 class ActivitySerializer(serializers.ModelSerializer):
     _id = ObjectIdField()
-    user = ObjectIdField()
+    user = UserSerializer()  # Use UserSerializer for the user field
 
     class Meta:
         model = Activity
